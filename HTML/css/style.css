@@ -1,0 +1,272 @@
+/* Struttura generale */
+
+body {
+    background-color: #F5F5F5;
+}
+
+
+
+@media (min-width: 768px)
+    .container {
+        max-width: 760px;
+    }
+
+
+/* Tipografia */
+
+h1 {
+    color:#fff;
+    text-transform: uppercase;
+}
+
+h2 {
+    color:#1F3F58;
+    text-transform: uppercase;
+}
+
+h3 {
+    color:#fff;
+}
+
+
+/* Bottoni */
+
+.btn.btn-primary {
+    margin:2em auto auto auto;
+    background-color: #7ed56f;
+    border:none;
+    text-transform: uppercase;
+    border-radius: 2em;
+    padding: 1em 2em;
+}
+
+.btn.btn-primary:hover {
+    background-color: #55c57a;
+}
+
+/* Fascia blu contatti e chiusura */
+
+@media (min-width: 992px) {
+    .navbar-blue {
+        background-color:#1F3F58; 
+        
+    }
+
+    .navbar-blue .navbar-nav .nav-link,
+    .navbar-blue .navbar-nav .nav-link a,
+    .navbar-blue .navbar-nav .nav-link span {
+        color:#ffffff;
+        font-size: 12px;
+        text-decoration: none;
+     }
+
+     .navbar-blue .navbar-nav .nav-link a:hover{
+         opacity: 0.6;
+     }
+
+    .navbar-expand-lg.navbar-blue .navbar-collapse {
+         justify-content: center;
+     }
+}
+
+/* Menu */
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse{
+        justify-content: flex-end;
+    }
+
+    .navbar-dark {
+        max-width: 1140px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+.navbar-dark .navbar-nav .nav-item {
+    margin-left: 0.5em;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:#ffffff;
+    text-transform:uppercase;
+    padding:0.2em 1em;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color:#ffffff;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 1em;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+    opacity: 0.6;
+}
+
+
+/* Header */
+
+.header {
+    height: 700px;
+    background: linear-gradient(to right bottom,rgba(31, 63, 88, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.header .titoli {
+    padding-top:6em;
+}
+
+
+/* Card Homepage */
+
+.sezioni {
+    margin-bottom: 5em;
+}
+
+.sezioni .sezioni-img {
+    padding: 0;
+}
+
+.sezioni .sezioni-img img {
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+.sezioni .sezioni-testo {
+    border-radius: 0.5em;
+    box-shadow: 1rem 1rem 3rem rgba(0,0,0, .15);
+    padding: 2em;
+    background-color: #fff;    
+}
+
+.sezioni.sezioni-testodx .sezioni-testo {
+    margin-left: -7%;
+}
+
+.sezioni.sezioni-testosx .sezioni-img {
+    margin-left: -7%;
+}
+
+.sezioni.sezioni-testosx .sezioni-testo {
+    z-index: 1;
+}
+
+.sezioni-prima {
+    z-index: 1;
+    margin-top: -10em;
+}
+
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+    }
+    .sezioni .sezioni-img img {
+        border-radius: 0.5em 0.5em 0 0;
+    }
+    .sezioni .sezioni-testo {
+        border-radius: 0 0 0.5em 0.5em;
+    }
+
+    .sezioni.sezioni-testosx .d-flex {
+        flex-direction: column-reverse;
+    }
+
+    .sezioni.sezioni-testodx .sezioni-testo,
+    .sezioni.sezioni-testosx .sezioni-img {
+        margin-left: 0;
+    }
+    
+} 
+
+/* Quadrotto Cerchi un fisioterapista */
+
+.ricerca {
+    background: linear-gradient(to right bottom,rgba(31, 63, 88, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    border-radius: 0.5em;
+    box-shadow: 1rem 1rem 3rem rgba(0,0,0, .15);
+    padding: 2em;
+    color:#fff;
+    margin-bottom: 5em;
+}
+
+.ricerca h2 {
+    color:#fff;
+}
+.ricerca .btn.btn-primary {
+    margin:auto;
+}
+
+/* Footer */
+
+footer {
+    background-color: #fff;
+    padding-top:2em;
+    color:#1F3F58;
+}
+
+footer h2 {
+    font-size:1em;
+}
+
+footer span a {
+    color:#1F3F58;
+}
+
+
+
+
+/* PAGINA CHI SONO */
+
+section.inalto {
+    z-index: 1;
+    margin-top: -20em;
+    margin-bottom:2em;
+}
+
+
+/* PAGINA TRATTAMENTI */
+
+a.d-block.collapsed i.fas {
+    background: #7ed56f;
+
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: rotate .5s linear;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
+a.d-block i.fas {
+    background: red;
+    color: #fff;
+    padding: 0.5em 0.6em;
+    border-radius: 5.5em;
+    font-size: 23px;
+
+    
+}
+a.d-block {
+    text-align: center;
+    margin-bottom: -2.5em;
+}
+
+.card {
+    margin:3em auto;
+    padding:1.2em;
+}
+
+
+/* PAGINA CONTATTI */
+
