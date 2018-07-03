@@ -13,6 +13,8 @@ h1 {
     color:#fff;
     text-transform: uppercase;
     font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 3.2em;
 }
 h2 {
     color:#1F3F58;
@@ -22,24 +24,30 @@ h2 {
 h3 {
     color:#fff;
     font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
 }
 
 /* Bottoni */
 .btn.btn-primary {
-    margin:2em auto auto auto;
+    margin: 2em auto auto auto;
     background-color: #7ed56f;
-    border:none;
+    border: none;
     text-transform: uppercase;
     border-radius: 2em;
-    padding: 1em 2em;
+    padding: 0.6em 2em;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
 }
 .btn.btn-primary:hover {
-    background-color: #55c57a;
+    box-shadow: 7px 7px 15px -5px rgba(0, 0, 0, 0.4);
 }
 
 /* Fascia blu contatti e chiusura */
  .navbar-blue {
     background-color:#1F3F58;   
+    height: 50px;
 }
 .navbar-blue .navbar-nav .nav-link,
 .navbar-blue .navbar-nav .nav-link a,
@@ -98,23 +106,24 @@ h3 {
 .navbar-dark .navbar-nav .active>.nav-link,
 .navbar-dark .navbar-nav .nav-link:focus, 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color:#ffffff;
-    background-color: rgba(255,255,255,0.4);
-    border-radius: 1em;
+    color: #ffffff;
+    border-radius: 1em; 
+    box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.4);
 }
-.navbar-dark .navbar-nav .nav-link:focus, 
-.navbar-dark .navbar-nav .nav-link:hover{
-    opacity: 0.6;
+.navbar-dark .navbar-nav .active > .nav-link{
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
 }
 .navbar-brand img {
-    height: 8em;
-    width: 10em;
+    height: 7em;
+    width: 9em;
 }
 
 /* Header */
 header {
     height: 700px;
-    background: linear-gradient(to right bottom,rgba(31, 63, 88, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+    background: linear-gradient(to right bottom,rgba(31, 63, 88, 0.8), 
+              rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
     background-size: cover;
     background-position: top;
     position: relative;
@@ -157,9 +166,9 @@ section.top-hp {
     margin-top: -10em;
 }
 
-/* Quadrotto Cerchi un fisioterapista */
+/* Cerchi un fisioterapista */
 .ricerca {
-    background: linear-gradient(to right bottom,rgba(31, 63, 88, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+    background: linear-gradient(to right bottom,rgba(31, 63, 88, 0.8), rgba(40, 180, 133, 0.8)), url("../img/sezione-hp-4.jpg");
     background-size: cover;
     background-position: top;
     position: relative;
@@ -187,6 +196,35 @@ footer h2 {
 }
 footer span a {
     color:#1F3F58;
+}
+
+/* Icone */
+
+.ico-nav {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0 5px 0 0;
+    position: relative;
+    top: 5px;
+}
+.ico-nav.pin-white{
+    background: url("../img/ico/ICO-pin-white.svg");
+}
+.ico-nav.phone-white{
+    background: url("../img/ico/ICO-phone-white.svg");
+}
+.ico-nav.calendar-white{
+    background: url("../img/ico/ICO-calendar-white.svg");
+}
+.ico-nav.pin-blue{
+    background: url("../img/ico/ICO-pin-blue.svg");
+}
+.ico-nav.phone-blue{
+    background: url("../img/ico/ICO-phone-blue.svg");
+}
+.ico-nav.calendar-blue{
+    background: url("../img/ico/ICO-calendar-blue.svg");
 }
 
 /* PAGINA CHI SONO */
