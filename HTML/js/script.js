@@ -15,9 +15,9 @@ $( document ).ready(function() {
 
 $(document).scroll(function() { 
    if($(window).scrollTop() <= 50) {
-      $('.main-nav').css("top" , "50px");
+      $('.main-nav').addClass("main-nav-top").removeClass("main-nav-scroll");
    }else{
-        $('.main-nav').css("top" , "0px");
+        $('.main-nav').addClass("main-nav-scroll").removeClass("main-nav-top");
    }
 });
 

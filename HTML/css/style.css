@@ -27,15 +27,21 @@ h3 {
     font-weight: 700;
     font-size: 1.4em;
 }
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.4;
+}
 
 /* Bottoni */
 .btn.btn-primary {
-    margin: 2em auto auto auto;
+    margin: 1em auto auto auto;
     background-color: #7ed56f;
     border: none;
     text-transform: uppercase;
     border-radius: 2em;
-    padding: 0.6em 2em;
+    padding: 0.4em 2em;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 500;
     font-size: 1.4em;
@@ -91,6 +97,16 @@ h3 {
                     -600px 0px 0px 0px rgba(0,0,0,0.4);
     box-shadow: 600px 0px 0px 0px rgba(0,0,0,0.4),
                 -600px 0px 0px 0px rgba(0,0,0,0.4);
+}
+.main-nav.main-nav-top {
+    top: 50px;
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.main-nav.main-nav-scroll {
+    top: 0;
 }
 .navbar-dark .navbar-nav .nav-item {
     margin-left: 0.5em;
@@ -181,9 +197,6 @@ section.top-hp {
 .ricerca h2 {
     color:#fff;
 }
-.ricerca .btn.btn-primary {
-    margin:auto;
-}
 
 /* Footer */
 footer {
@@ -197,6 +210,21 @@ footer h2 {
 footer span a {
     color:#1F3F58;
 }
+.nav-link {
+    font-size: 0.9em;
+}
+.footer-description{
+    padding: 0 2em;
+}
+.navbar-blue.footer{
+    font-weight: 700;
+    line-height: 3;
+}
+.navbar-blue.footer span{
+    display: inline-block;
+    color: #fff;
+}
+
 
 /* Icone */
 
@@ -206,7 +234,7 @@ footer span a {
     height: 24px;
     margin: 0 5px 0 0;
     position: relative;
-    top: 5px;
+    top: 7px;
 }
 .ico-nav.pin-white{
     background: url("../img/ico/ICO-pin-white.svg");
