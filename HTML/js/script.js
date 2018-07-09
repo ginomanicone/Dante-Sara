@@ -1,3 +1,5 @@
+/* Nascondo menu allo scrolling down e mostro allo scroll up */
+
 $( document ).ready(function() {
 (function($){
     var lastScrollTop = 0;
@@ -12,6 +14,7 @@ $( document ).ready(function() {
     });
 })(jQuery);
 
+/* script per stilizzare il menu in cima alla pagina */
 
 $(document).scroll(function() { 
    if($(window).scrollTop() <= 50) {
@@ -22,5 +25,3 @@ $(document).scroll(function() {
 });
 
 });
-
-
