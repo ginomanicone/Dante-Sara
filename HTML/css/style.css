@@ -98,6 +98,9 @@
  .main-nav.main-nav-scroll {
      top: 0;
 }
+.main-nav.nav-up:not(.main-nav-top) .navbar-brand img{
+    display: none;
+}
  .navbar-dark .navbar-nav .nav-item {
      margin-left: 0.5em;
 }
